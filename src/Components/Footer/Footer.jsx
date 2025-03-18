@@ -9,8 +9,8 @@ export default function Footer() {
 
     
   return <>
-    
-    <footer className="bg-zinc-50 text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left">
+    <div className='mt-36'>
+  <footer className="bg-zinc-50 text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left">
         <div className='container mx-auto xl:px-28'>
           <div className="flex items-center  justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
             <div className="me-12 hidden lg:block">
@@ -114,6 +114,9 @@ export default function Footer() {
         </div>
 
       </footer>
+  
+  </div>  
+
   
   </>
 }
