@@ -21,6 +21,7 @@ export default function MianSlide() {
       };
 
 
+<<<<<<< HEAD
   return (
     <>
       <div className="flex flex-col md:flex-row">
@@ -44,4 +45,26 @@ export default function MianSlide() {
       </div>
     </>
   )
+=======
+  return <>
+  
+
+      <div className="flex">
+        <div className="w-3/4">
+        <Slider {...settings}>
+                <img src={slide1} className='w-full h-[500px]' alt="" />
+                <img src={image} className='w-full h-[500px]' alt="" />
+                <img src={slide1} className='w-full h-[500px]' alt="" />
+        </Slider>
+  
+        </div>
+        <div className="w-1/4">
+        <img src={logo} className='w-full h-[250px]' alt="" />
+        <img src={slide2} className='w-full h-[250px]' alt="" />
+        </div>
+      </div>
+  
+  
+  </>
+>>>>>>> 128dc1ccdd92db96293a262f3e341c47e1044cc6
 }

@@ -6,6 +6,7 @@ export default function CategorisSlider() {
 
 
     var settings = {
+<<<<<<< HEAD
     dots: false,
     infinite: true,
     speed: 500,
@@ -32,6 +33,16 @@ export default function CategorisSlider() {
       }
     ]
   };
+=======
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 3,
+        arrows:false,
+        autoplay:true,
+      };
+>>>>>>> 128dc1ccdd92db96293a262f3e341c47e1044cc6
       const [categories, setCategories] = useState([]);
 
       async function getRecentProducts() {
@@ -53,6 +64,7 @@ export default function CategorisSlider() {
 
   return <>
     <Slider {...settings}>
+<<<<<<< HEAD
         {/* أوفر 1 */}
         <div className="py-4 px-2">
           <div className="bg-gradient-to-r from-emerald-400 to-emerald-700 rounded-xl flex flex-col items-center justify-center h-[180px] md:h-[200px] text-white p-4">
@@ -86,6 +98,13 @@ export default function CategorisSlider() {
           </div>
         </div>
       </Slider>
+=======
+        {categories?.map((category , index)=> <div key={index} className='py-4' >
+            <img src={category.image} className='w-full h-[200px] pt-4-4'/>
+            <h3>{category.name}</h3>
+        </div>)}
+    </Slider>
+>>>>>>> 128dc1ccdd92db96293a262f3e341c47e1044cc6
   
   
   </>

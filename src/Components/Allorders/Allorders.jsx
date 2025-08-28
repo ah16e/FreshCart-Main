@@ -12,6 +12,7 @@ export default function Allorders() {
   } , [])
 
 
+<<<<<<< HEAD
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-[60vh] bg-white">
@@ -30,4 +31,17 @@ export default function Allorders() {
       </div>
     </>
   )
+=======
+  return <>
+   <div className="pt-24 pb-24">
+   <div className="pt-16 pb-24 rounded-md border border-green-500 text-center">
+    <h1 className="text-3xl">your payment process is successful <i class="fa-regular text-green-600 fa-circle-check"></i></h1>
+      <div className="pt-4">
+    <button className='bg-main p-3 rounded-md '><NavLink to={'/'}>Home</NavLink></button>
+      </div>
+     </div>
+   </div>
+  
+  </>
+>>>>>>> 128dc1ccdd92db96293a262f3e341c47e1044cc6
 }

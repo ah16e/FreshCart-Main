@@ -31,6 +31,7 @@ export default function Home() {
   return <>
     <MianSlide/>
     <CategorisSlider/>
+<<<<<<< HEAD
       {products.length ? (
   <div className="grid pb-12 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6 gap-6">
     {products.map((product, index) => (
@@ -42,6 +43,13 @@ export default function Home() {
     <Loading />
   </div>
 )}
+=======
+      {products.length?  <div  className="grid pb-12 sm:grid-cols-2 grid-cols- xl:grid-cols-6 md:grid-cols-4 lg:grid-cols-6 gap-6">
+     {products.map((product , index)=> <RecentProducts key={index} product={product}/>)}
+      </div> :<div className="text-center flex justify-center py-16">
+      <Loading/>
+    </div> }
+>>>>>>> 128dc1ccdd92db96293a262f3e341c47e1044cc6
     
   
   </>

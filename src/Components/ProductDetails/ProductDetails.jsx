@@ -39,6 +39,7 @@ export default function ProductDetails() {
   } , [id])
 
     
+<<<<<<< HEAD
   return (
     <>
       <div className="bg-white rounded-xl shadow-lg p-6 my-8 max-w-4xl mx-auto">
@@ -77,4 +78,30 @@ export default function ProductDetails() {
       <RelatedProduct />
     </>
   )
+=======
+  return <>
+    
+    <h1 className="text-3xl">ProductDetails</h1>
+    <div className="flex py-10 items-center">
+      <div className="w-1/4 p-4">
+     {details.images > 1 ?  <Slider {...settings}>
+        {details.images.map((image , index)=> <img key={index} src={image} className='w-full'/>)}
+       </Slider> : <img src={details.imageCover} className='w-full'/>}
+      </div>
+      <div className="w-3/4">
+      <div>
+        <h2>{details.title}</h2>
+        <p className='my-6 text-gray-500'>{details.description}</p>
+        <h3>{details.category?.name}</h3>
+        <div className="flex justify-between my-2">
+            <h3>{details.price} EGP</h3>
+            <h3><i className='fas fa-star rating-color'></i>{details.ratingsAverage}</h3>
+        </div>
+        <button onClick={()=> addProductToCart(details.id)} className='btn bg-main w-full text-white rounded'>Add To Cart</button>
+      </div>
+      </div>
+    </div>
+    <RelatedProduct/>
+  </>
+>>>>>>> 128dc1ccdd92db96293a262f3e341c47e1044cc6
 }
